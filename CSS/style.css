@@ -1,43 +1,66 @@
+/*Dette er linjer, der er designet til at importere teskt fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Idiqlat:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Idiqlat:wght@200;300;400&display=swap');
+
+
 * {
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
-@media (min-width: 768px) {
+body {
+  display: grid;
+  background-color: #fff;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+}
 
-    body {
-        /* Fjerner default margins og padding, på siden. */
-        margin: 0;
-        padding: 0;
+h1 {
+        font-family: "Akatab", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-top: 5rem;
+        margin-bottom: -1rem;
     }
 
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+/* Den nedenstående kode, er kun til headeren */
     header {
         background-color: #5d82a2;
-    }
-
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2rem;
-        font-weight: bold;
-
+        margin: 0;
     }
 
     .logo {
-        display: flex;
-    
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        flex-wrap: wrap;
     }
 
     .logo img {
         height: 40px;
         width: 40px;
-        margin: 10px;
+        margin: 1rem;
 
     }
 
-    .logo h1 {
+    .logo h3 {
         color: #fff;
-         display: flex;
-        margin: 10px;
+        display: flex;
+        margin: 1rem;
         padding: 0;
+        font-family: "Idiqlat", serif;
+        font-size: 2rem;
+        font-weight: 300;
     }
 
     .navbar {
@@ -51,30 +74,20 @@
         display: flex;
         gap: 20px;
         list-style: none;
-        margin: 15px;
+        margin: 0 2rem;
     }
 
     .navlink a {
-         color: #fff;
+        color: #fff;
         font-size: 1.5rem;
+        text-decoration: none;
     }
 
-    .menu-toggle {
-        display: none;
-        font-size: 30px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: none;
-        font-size: 30px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
+/* Alt der følger her, er ting der har indflydelse på main */
+footer {
+    background-color: #27567D;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
 }
