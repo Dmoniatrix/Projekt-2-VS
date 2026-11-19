@@ -106,3 +106,26 @@ h2 {
     footer section h2 {
         margin: 1rem 0 0 0;
     }
+
+    /* kontakt formular stylizing neden under */
+    .kontaktform {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 1rem;
+    
+    }
+
+    .kontaktform label{
+        display: inline-flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    textarea {
+    width: 100%;
+    min-height: 200px;
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    }
