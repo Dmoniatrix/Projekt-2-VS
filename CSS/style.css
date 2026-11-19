@@ -83,11 +83,26 @@ h2 {
         text-decoration: none;
     }
 
-/* Alt der følger her, er ting der har indflydelse på main */
+/* Alt der følger her, er ting der har indflydelse på Footer */
 footer {
     background-color: #27567D;
     margin: 0;
     color: #fff;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+}
+
+footer section{
+    display:inline-flex;
+    flex-direction: column;
+}
+
+footer section a, p{
+    color: #fff;
+    margin: auto 0;
+}
+
+footer section h2 {
+    margin: 1rem 0 0 0;
 }
