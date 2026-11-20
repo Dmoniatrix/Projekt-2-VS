@@ -46,8 +46,6 @@ h2 {
 header {
     background-color: rgb(93, 130, 162);
     margin: 0;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .logo {
@@ -74,70 +72,27 @@ header {
     font-weight: 300;
 }
 
-/* Desktop navbar */
-
-.navigation {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    padding: 0;
+    gap: .5rem 0;
 }
 
-.navbar {
+.navlink {
     display: flex;
+    gap: 20px;
     list-style: none;
-    gap: 30px;
+    margin: 0 2rem;
 }
 
 .navlink a {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
     text-decoration: none;
-    color: white;
-}
-
-/* Burger button */
-
-.burger-menu {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.burger-menu span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-}
-
-/* Mobile navbar */
-
-@media (max-width: 600px) {
-
-    .navigation {
-        position: relative;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        padding: 20px 0;
-        margin: 0;
-        text-align: center;
-    }
-
-    .navigation.is-open .navbar {
-        display: flex;
-    }
 }
 
 header a:hover,
