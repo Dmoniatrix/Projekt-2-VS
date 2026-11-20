@@ -26,18 +26,18 @@
     <main>
         <center>
             <h1>Kontakt os her</h1>
-            <h2></h2>
-            <form class="kontaktform">
+            <h2>Har du spørgsmål, eller ønsker du at få mere personligt hjælp? Så kontakt os på den nedenstående Kontaktformular. Så skriver vi tilbage, når vi har modtaget din besked, og kan snakke nærmere om dine ønsker.</h2>
+            <form class="kontaktform"> <!-- her laver jeg en form. form er brugt til at skabe elementer som brugeren kan indputte information ind i -->
                 <fieldset>
-                    <label for="name">Navn<input class="userinfo" type="text" id="name" name="name" placeholder="Dit navn her..."></label>
-                    <label for="email">Email<input class="userinfo" type="email" id="email" name="email" placeholder="Din email her..."></label>
-                    <label for="phone">Mobil Nummer<input class="userinfo" type="tel" id="phone" name="phone" placeholder="Dit nummer her..."></label>
+                    <label for="name">Navn<input class="userinfo" type="text" id="name" name="name" placeholder="Dit navn her..."></label> <!-- Her bruger vi label, til at lave et definere et navn eller label, til  andre elementer, primært input elementer. Der er også et input element her. input indeholder diverse descriptors, som definerer den type af information de gerne vil modtage -->
+                    <label for="email">Email<input class="userinfo" type="email" id="email" name="email" placeholder="Din email her..."></label> 
+                    <label for="phone">Mobil Nummer<input class="userinfo" type="tel" id="phone" name="phone" placeholder="Dit nummer her..."></label> 
                 </fieldset>
                 <section>
-                    <textarea id="besked" name="besked" placeholder="Skriv din besked her..."></textarea>
+                    <textarea id="besked" name="besked" placeholder="Skriv din besked her..."></textarea> <!-- Her er en textarea. textarea skaber et område, hvor brugeren kan inputte tekst af hvilken type de har lyst til. -->
                 </section>
 
-                <button type="submit" aria-label="send knap">Send besked</button>
+                <button type="submit" aria-label="send knap">Send besked</button> <!-- button type="submit", er en knap som bliver brugt til at tage den information som den er tilknyttet gennem form'en, og sende det videre i systemet. Havde jeg inbygget en database i min hjemmeside, ville informationen f.eks. blive indputtet i databasen -->
 
             </form>
         </center>
