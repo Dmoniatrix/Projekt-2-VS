@@ -16,6 +16,13 @@ body {
     
 }
 
+header a:hover,
+header a:focus
+ {
+    background-color: rgb(39, 86, 125);
+
+}
+
 main {
     flex: 1;
 }
