@@ -16,13 +16,6 @@ body {
     
 }
 
-header a:hover,
-header a:focus
- {
-    background-color: rgb(39, 86, 125);
-
-}
-
 main {
     flex: 1;
 }
@@ -40,6 +33,12 @@ h2 {
     font-size: 1.25rem;
     font-weight: 500;
     margin: 2rem;
+}
+
+.mid-video {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
 /* ---------- Header ---------- */
@@ -96,11 +95,14 @@ header {
     text-decoration: none;
 }
 
-.mid-video {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+header a:hover,
+header a:focus
+ {
+    background-color: rgb(39, 86, 125);
+
 }
+
+/* ---------- Footer ---------- */
 
 footer {
     background-color: rgb(39, 86, 125);
@@ -125,6 +127,27 @@ p {
 footer section h2 {
     margin: 1rem 0 0;
 }
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .navlink {
+        margin: 0 1rem;
+    }
+
+    .navlink a {
+        font-size: 1.2rem;
+    }
+
+    
+
+}
+
+/* ---------- Kontaktformular ---------- */
 
 .kontaktform {
     display: inline-flex;
@@ -172,24 +195,8 @@ textarea {
     font-size: 1.25rem;
 }
 
-@media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 1.5rem;
-    }
+/* ---------- Forside link grid ---------- */
 
-    .navlink {
-        margin: 0 1rem;
-    }
-
-    .navlink a {
-        font-size: 1.2rem;
-    }
-
-    
-
-}
 
 .hjaelp-grid {
     display: grid;
@@ -256,4 +263,25 @@ textarea {
         width: 100%;
         margin: 2rem auto;
     }
+}
+
+/* ---------- Information tekstblok ---------- */
+
+.tekstblok {
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    align-items: flex-start;
+    margin: 10rem;
+    position: relative;
+}
+
+.tekstblok img {
+    max-width: 100%;
+    width: 30%;
+}
+
+.tekstblok p {
+    color: black;
+    max-width: 80%;
 }
